@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thecoderlog.com/sitemap-index.xml
