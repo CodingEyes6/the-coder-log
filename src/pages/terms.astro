@@ -1,0 +1,38 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Terms of Service | ${SITE_TITLE}`} description="Terms of Service for The Coder Log." />
+	</head>
+	<body>
+		<Header />
+		<main class="max-w-3xl mx-auto px-6 py-12 flex-1 w-full">
+			<h1 class="text-3xl md:text-4xl font-black text-white tracking-tight mb-6">Terms of Service</h1>
+			<p class="text-slate-400 mb-6">Last updated: June 2026</p>
+
+			<div class="space-y-6 text-slate-300 leading-relaxed">
+				<p>By accessing the website at <strong>thecoderlog.com</strong>, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.</p>
+
+				<h2 class="text-xl font-bold text-white pt-4">1. Use License & Code Snippets</h2>
+				<p>Permission is granted to download or copy the open-source code snippets provided in the articles on The Coder Log for both personal and commercial software development development projects. This is the grant of a license, not a transfer of title, and under this license you may not:</p>
+				<ul class="list-disc pl-6 space-y-2 text-slate-400">
+					<li>Republish the entire written article or tutorials on other platforms without proper canonical credit.</li>
+					<li>Use the full written materials for commercial automated scraping/AI training without explicit consent.</li>
+				</ul>
+
+				<h2 class="text-xl font-bold text-white pt-4">2. Disclaimer</h2>
+				<p>The materials on The Coder Log's website are provided on an 'as is' basis. The Coder Log makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</p>
+
+				<h2 class="text-xl font-bold text-white pt-4">3. Limitations of Liability</h2>
+				<p>In no event shall The Coder Log or its owners be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the code or tutorials on the website, even if notified orally or in writing of the possibility of such damage.</p>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

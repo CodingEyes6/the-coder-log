@@ -1,0 +1,40 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Privacy Policy | ${SITE_TITLE}`} description="Privacy Policy for The Coder Log." />
+	</head>
+	<body>
+		<Header />
+		<main class="max-w-3xl mx-auto px-6 py-12 flex-1 w-full prose prose-invert">
+			<h1 class="text-3xl md:text-4xl font-black text-white tracking-tight mb-6">Privacy Policy</h1>
+			<p class="text-slate-400 mb-6">Last updated: June 2026</p>
+
+			<div class="space-y-6 text-slate-300 leading-relaxed">
+				<p>Welcome to <strong>The Coder Log</strong> (thecoderlog.com). Your privacy is critically important to us. This Privacy Policy document contains types of information that is collected and recorded by our website and how we use it.</p>
+
+				<h2 class="text-xl font-bold text-white pt-4">1. Log Files</h2>
+				<p>The Coder Log follows a standard procedure of using log files. These files log visitors when they visit websites. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable.</p>
+
+				<h2 class="text-xl font-bold text-white pt-4">2. Cookies and Web Beacons</h2>
+				<p>Like any other website, The Coder Log uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
+
+				<h2 class="text-xl font-bold text-white pt-4">3. Google AdSense & Third-Party Ads</h2>
+				<p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to our site and other sites on the internet. Third-party ad servers or ad networks use technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on The Coder Log, which are sent directly to users' browser. They automatically receive your IP address when this occurs.</p>
+
+				<h2 class="text-xl font-bold text-white pt-4">4. Affiliate Disclosure</h2>
+				<p>The Coder Log is a participant in affiliate marketing programs (including the Amazon Services LLC Associates Program). This means we may earn advertising fees/commissions by advertising and linking to products. These third-party affiliate networks use cookies to track commissions generated from our links.</p>
+
+				<h2 class="text-xl font-bold text-white pt-4">5. Contact Information</h2>
+				<p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at <strong>contact@thecoderlog.com</strong>.</p>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>

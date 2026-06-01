@@ -2,39 +2,25 @@
 const today = new Date();
 ---
 
-<footer>
-	&copy; {today.getFullYear()} <span>The Coder Log</span>. All rights reserved.
-	<div class="social-links">
-		<a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-		<a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+<footer class="w-full border-t border-slate-800/80 bg-slate-900/30 py-8 mt-auto text-center text-sm text-slate-500">
+	<div class="max-w-4xl mx-auto px-6 flex flex-col items-center gap-4">
+		
+		<p class="font-medium">
+			&copy; {today.getFullYear()} <span class="text-slate-400 font-semibold">The Coder Log</span>. All rights reserved.
+		</p>
+
+		<div class="flex justify-center gap-6 text-slate-400 font-medium">
+			<a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors duration-200 no-underline">GitHub</a>
+			<a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors duration-200 no-underline">Twitter</a>
+		</div>
+
+		<div class="w-12 h-[1px] bg-slate-800"></div>
+
+		<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs">
+			<a href="/privacy" class="hover:text-blue-400 transition-colors duration-200 no-underline text-slate-500">Privacy Policy</a>
+			<a href="/terms" class="hover:text-blue-400 transition-colors duration-200 no-underline text-slate-500">Terms of Service</a>
+			<a href="/contact" class="hover:text-blue-400 transition-colors duration-200 no-underline text-slate-500">Contact Us</a>
+		</div>
+
 	</div>
 </footer>
-
-<style>
-	footer {
-		padding: 2rem 1.5rem;
-		background: #0f172a; /* Exact slate-900 */
-		border-top: 1px solid #1e293b; /* Top border divider */
-		color: #64748b; /* Smooth slate-500 text */
-		text-align: center;
-		font-size: 0.875rem;
-	}
-	span {
-		color: #94a3b8; /* Highlighted brand name */
-		font-weight: 600;
-	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-		margin-top: 1rem;
-	}
-	.social-links a {
-		color: #94a3b8;
-		text-decoration: none;
-		transition: color 0.2s;
-	}
-	.social-links a:hover {
-		color: #60a5fa; /* Smart tech blue hover */
-	}
-</style>
